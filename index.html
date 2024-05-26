@@ -4,10 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Student Management System</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header class="header" id="header">
+      <div class="flex-center">
+        <h1>Shram Sadhana Bombay Trust's College Of Engineering And Technology</h1>
+      </div>
+      <nav class="navbar flex justify-end align-center">
+        <ul class="menu-links flex">
+          <li class="list-item" id="home"><a href="#home">Home<a></li>
+          <li class="list-item" id="add-student">Add Student</li>
+          <li class="list-item" id="view-student">View Student</li>
+          <li class="list-item" id="remove-student">Remove Student</li>
+          <li class="list-item" id="update-student">Update Student</li>
+        </ul>
+        <button>Log In</button>
+      </nav>
+    </header>
+    <main class="main-content" id="home">
+
+    </main>
+    <script src="main.js"></script>
   </body>
 </html>

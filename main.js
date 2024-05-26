@@ -1,24 +1,34 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+document.addEventListener("DOMContentLoaded", () =>{
+    const home = document.getElementById('home');
+    const addStudent = document.getElementById('add-student');
+    const viewStudent = document.getElementById('view-student');
+    const updateStudent = document.getElementById('remove-student');
+    const removeStudent = document.getElementById('update-student');
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+    home.addEventListener('click', goHome);
+    addStudent.addEventListener('click', createStudent);
+    viewStudent.addEventListener('click', showStudent);
+    updateStudent.addEventListener('click', editStudent);
+    removeStudent.addEventListener('click', deleteStudent);
+});
+const goHome = () =>{
+    alert("go Home");
+}
 
-setupCounter(document.querySelector('#counter'))
+const createStudent = () =>{
+    alert("element clicked")
+   const mainContent =  document.querySelector('main-content');
+
+}
+
+const showStudent = () =>{
+    alert("Student Data is Showing here");
+}
+
+const editStudent = () =>{
+    alert("Edit Student Here");
+}
+
+const deleteStudent = () =>{
+    alert("Delete your student from here");
+}

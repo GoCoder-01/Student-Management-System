@@ -1,0 +1,25 @@
+.container{
+    padding: 20% 0px;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content:end;
+}
+.allign-center{
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-item{
+    font-size: 1.2em;
+    color: rgb(0, 234, 255);
+    cursor: pointer;
+}
