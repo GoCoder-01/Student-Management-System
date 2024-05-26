@@ -51,11 +51,12 @@ const createStudent = () => {
     const genderInput = document.createElement('input');
     genderInput.classList.add('input');
     genderInput.setAttribute('type', 'text');
-    genderInput.setAttribute('list', 'gender');
+    genderInput.setAttribute('id', 'gender');
+    genderInput.setAttribute('list', 'gender-list');
     genderInput.setAttribute('placeholder', 'Select Gender');
 
     const genderList=document.createElement('datalist');
-    genderList.setAttribute('id', 'gender');
+    genderList.setAttribute('id', 'gender-list');
 
     const maleOptn = document.createElement('option');
     maleOptn.setAttribute('value', 'MALE');
@@ -90,6 +91,21 @@ const createStudent = () => {
     submit.classList.add('bg-success');
     submit.setAttribute('id', 'confirm-btn');
     submit.innerText = "Save & Continue";
+
+    submit.addEventListener('click', () =>{
+        const studentName=document.getElementById('name').value;
+        const admClass = document.getElementById('currentClass').value;
+        const studentGender =document.getElementById('gender').value;
+        const dob = document.getElementById('dob').value;
+
+        const student = {
+            name : `${studentName}`,
+            admittedToClass : `${admClass}`,
+            gender : `${studentGender}`,
+            dateOfBirth : `${dob}`
+        }
+        alert(JSON.stringify(student));
+    })
 
     buttonCont.appendChild(cancel);
     buttonCont.appendChild(submit);
