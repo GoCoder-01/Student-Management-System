@@ -1,32 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-    <title>Student Management System</title>
-  </head>
-  <body>
-    <header class="header" id="header">
-      <div class="flex-center">
-        <h1>Shram Sadhana Bombay Trust's College Of Engineering And Technology</h1>
-      </div>
-      <nav class="navbar flex justify-end align-center">
-        <ul class="menu-links flex">
-          <li class="list-item" id="home"><a href="#home">Home<a></li>
-          <li class="list-item" id="add-student">Add Student</li>
-          <li class="list-item" id="view-student">View Student</li>
-          <li class="list-item" id="remove-student">Remove Student</li>
-          <li class="list-item" id="update-student">Update Student</li>
-        </ul>
-        <button>Log In</button>
-      </nav>
-    </header>
-    <main class="main-content" id="home">
 
-    </main>
-    <script src="main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility.css">
+  <title>Student Management System</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="flex-center">
+      <h1>Shram Sadhana Bombay Trust's College Of Engineering And Technology</h1>
+    </div>
+    <nav class="navbar flex justify-end align-center">
+      <ul class="menu-links flex">
+        <li class="list-item" id="home">Home</li>
+        <li class="list-item" id="add-student">Add Student</li>
+        <li class="list-item" id="view-student">View Student</li>
+        <li class="list-item" id="remove-student">Remove Student</li>
+        <li class="list-item" id="update-student">Update Student</li>
+      </ul>
+      <button>Log In</button>
+    </nav>
+  </header>
+  <main class="main-content">
+    <!-- <div class="form-container flex col-dir">
+      <div class="head flex-center">
+        <h1>Create New Student</h1>
+      </div>
+      <form>
+        <input type="text" class="input text-input" placeholder="Student name">
+        <input type="text" class="input" placeholder="Admitted to class">
+        <input class="input" type="text" list="gender" placeholder="Select gender">
+        <datalist id="gender">
+          <option value="MALE">MALE</option>
+          <option value="FEMALE">FEMALE</option>
+        </datalist>
+        <input class="input" type="date" name="dateOfBirth" id="dob" placeholder="Select Birth Date">
+        <div class="buttons flex justify-btwn">
+          <button class="button bg-danger" id="cancel-btn">Cancel</button>
+          <button class="button bg-success" id="confirm-btn">Save & Continue </button>
+        </div>
+       
+      </form>
+    </div> -->
+  </main>
+  <script src="main.js"></script>
+</body>
+
 </html>

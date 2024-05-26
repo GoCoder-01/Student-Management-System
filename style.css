@@ -21,10 +21,11 @@ body{
     font-weight: 400;
     color: white;
     text-align: center;
+    background-color: red;
 }
 
 .header .navbar{
-    padding: 20px 10px 3px;
+    padding: 10px 10px 3px;
     background-color: rgb(38, 38, 69);
     margin: 20px 10px 10px;
     border-radius: 10px;
@@ -53,6 +54,7 @@ body{
     border-radius: 30px;
     margin-left: 100px;
     max-width: fit-content;
+    border: none;
 }
 .main-content{
     min-height: 82vh;
@@ -62,4 +64,18 @@ body{
 }
 .pink{
     background-color: pink;
+}
+.student-container{
+    background-color: white;
+}
+.form-container{
+    margin: 0.5vw 8vw;
+    padding: 0.5vw 2vw 1vw;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.form-container .head{
+    background-color: rgb(12, 141, 59);
+    border-radius: 10px;
+    color: white;
 }

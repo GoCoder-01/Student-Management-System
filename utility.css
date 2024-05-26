@@ -10,6 +10,9 @@
 .justify-end{
     justify-content:end;
 }
+.justify-btwn{
+    justify-content: space-between;
+}
 .allign-center{
     align-items: center;
 }
@@ -22,4 +25,34 @@
     font-size: 1.2em;
     color: rgb(0, 234, 255);
     cursor: pointer;
+}
+
+.input, .button{
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    padding: 8px 10px;
+    margin: 8px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.button{
+    background-color: rgb(5, 5, 43);
+    color: white;
+    border-radius: 20px;
+}
+
+.col-dir{
+    flex-direction: column;
+}
+
+.text-input{
+    width: 350px;
+}
+.bg-danger{
+    background-color: rgb(95, 0, 0);
+}
+.bg-success{
+    background-color: rgb(5, 78, 5);
 }
