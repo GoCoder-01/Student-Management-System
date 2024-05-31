@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const goHome = () => {
-    alert("go Home");
+    alert("GO TO HOME PAGE");
 }
 
 const createStudent = () => {
@@ -124,7 +124,7 @@ const createStudent = () => {
 }
 
 const showStudent = () => {
-    alert("Student Data is Showing here");
+    alert("RENDERING STUDENT DATA");
 }
 
 const editStudent = () => {
