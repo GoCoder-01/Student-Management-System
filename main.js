@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const goHome = () => {
-    alert("go Home");
+    alert("GO TO HOME PAGE");
 }
 
 const createStudent = () => {
@@ -122,6 +122,7 @@ const createStudent = () => {
     mainContent.appendChild(formContainer);
 }
 
+<<<<<<< HEAD
 const showStudent = async() => {
     // await fetch("Student.json").then(response => response.json()).then(data => console.log(data)).catch((error) => console.log(error));
 
@@ -180,6 +181,10 @@ const showStudent = async() => {
     tableContainer.appendChild(table);
     mainContainer.appendChild(tableContainer);
     
+=======
+const showStudent = () => {
+    alert("RENDERING STUDENT DATA");
+>>>>>>> 31dcb053f6a32c35dd356b441e0e23460a46bdb4
 }
 
 const editStudent = () => {
