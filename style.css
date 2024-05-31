@@ -58,7 +58,7 @@ body{
 }
 .main-content{
     min-height: 82vh;
-    background-image: url("public/images/college.jpeg");
+    background-image: url("/images/college.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -78,4 +78,26 @@ body{
     background-color: rgb(12, 141, 59);
     border-radius: 10px;
     color: white;
+}
+
+.table-container{
+    padding: 50px 1vw 10px;
+    background-color: white;
+}
+
+.table-container table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-container table tr th{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-collapse: collapse;
+}
+.table-container table tr td{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-collapse: collapse;
 }

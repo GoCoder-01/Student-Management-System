@@ -1,0 +1,62 @@
+[
+    {
+        "name":"OM SANTOSH GAWANDE",
+        "className":"GRADE XII",
+        "dob":"12-08-2006",
+        "gender":"MALE"
+    },
+    {
+        "name":"RAJ TUSHAR MALHOTRA",
+        "className":"GRADE XII",
+        "dob":"12-08-2006",
+        "gender":"MALE"
+    },
+    {
+        "name":"KRUSHNA SHALIKRAM KALE",
+        "className":"GRADE II",
+        "dob":"12-08-2016",
+        "gender":"MALE"
+    },
+    {
+        "name":"SACHIN SANTOSH GAWANDE",
+        "className":"GRADE XII",
+        "dob":"12-10-2006",
+        "gender":"MALE"
+    },
+    {
+        "name":"KOMAL RAMESH GAWANDE",
+        "className":"GRADE XII",
+        "dob":"12-08-2006",
+        "gender":"MALE"
+    },
+    {
+        "name":"SHAKTI VIRAJ KAPUR",
+        "className":"GRADE XII",
+        "dob":"12-08-2021",
+        "gender":"MALE"
+    },
+    {
+        "name":"VISHAL SANTOSH GAWANDE",
+        "className":"GRADE XII",
+        "dob":"12-12-2012",
+        "gender":"FEMALE"
+    },
+    {
+        "name":"AKSHAY GAJANAN FUKE",
+        "className":"GRADE X",
+        "dob":"20-05-2005",
+        "gender":"MALE"
+    },
+    {
+        "name":"POOJA GAJANAN VAIDYA",
+        "className":"GRADE IX",
+        "dob":"09-01-2009",
+        "gender":"FEMALE"
+    },
+    {
+        "name":"KARTIK VISHNU PANBHARE",
+        "className":"GRADE XI",
+        "dob":"31-10-2007",
+        "gender":"MALE"
+    }
+]
