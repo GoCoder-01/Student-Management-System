@@ -1,0 +1,28 @@
+.update-container{
+    position: relative;
+    top: 50px;
+    padding: 20px 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 20vw;
+}
+
+.update-container .heading-container{
+    background-color: rgb(0, 129, 4);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+.update-container .update-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.update-input{
+    padding: 8px 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 1em;
+    min-width: 400px;
+}
