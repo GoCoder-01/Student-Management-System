@@ -4,7 +4,6 @@ const createStudent = () => {
     const mainContent = document.querySelector('.main-content');
     mainContent.innerHTML="";
     mainContent.innerText="";
-    // mainContent.classList.remove("main-content");
     mainContent.classList.add("create-student");
     const formContainer = document.createElement('div');
     formContainer.classList.add('form-container');

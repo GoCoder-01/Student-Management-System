@@ -4,8 +4,9 @@
     min-height: 87.5vh;
     width: 100vw;
 }
-
 .form-container{
+    position: relative;
+    top: 10vh;
     margin: 0.5vw 8vw;
     padding: 1vw 2vw 1vw;
     background-color: #fff;
@@ -15,4 +16,5 @@
     background-color: rgb(12, 141, 59);
     border-radius: 10px;
     color: white;
+    margin-bottom: 30px;
 }
