@@ -1,3 +1,4 @@
+import "../css-files/ShowStudent.css"
 
 const showStudent = async() => {
     // await fetch("Student.json").then(response => response.json()).then(data => console.log(data)).catch((error) => console.log(error));
@@ -53,7 +54,6 @@ const showStudent = async() => {
 
         table.appendChild(dataRow);
     });
-
     tableContainer.appendChild(table);
     mainContainer.appendChild(tableContainer);
 }

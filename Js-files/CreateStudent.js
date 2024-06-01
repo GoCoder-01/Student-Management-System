@@ -1,10 +1,12 @@
-
+import "../css-files/CreateStudent.css";
+import "../utility.css";
 const createStudent = () => {
     const mainContent = document.querySelector('.main-content');
-    console.log(mainContent);
     mainContent.innerHTML="";
     mainContent.innerText="";
-        const formContainer = document.createElement('div');
+    // mainContent.classList.remove("main-content");
+    mainContent.classList.add("create-student");
+    const formContainer = document.createElement('div');
     formContainer.classList.add('form-container');
     formContainer.classList.add('flex');
     formContainer.classList.add('col-dir');

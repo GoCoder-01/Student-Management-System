@@ -1,4 +1,4 @@
-
+import "../css-files/DeleteStudent.css";
 const deleteStudent = () => {
     alert("Delete your student from here");
 }

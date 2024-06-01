@@ -1,0 +1,22 @@
+
+.table-container{
+    padding: 50px 1vw 10px;
+    background-color: white;
+}
+
+.table-container table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-container table tr th{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-collapse: collapse;
+}
+.table-container table tr td{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-collapse: collapse;
+}

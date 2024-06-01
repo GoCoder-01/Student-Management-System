@@ -12,6 +12,7 @@ body{
     min-height: 100vh;
     background-color: rgb(3, 3, 46);
 }
+
 .header{
     padding: 10px 0px 0px;
 }
@@ -32,6 +33,7 @@ body{
     color: white;
     flex-wrap: wrap;
 }
+
 .header .navbar ul{
     list-style-type: none;
     gap: 50px;
@@ -53,51 +55,12 @@ body{
     letter-spacing: 0.05em;
     border-radius: 30px;
     margin-left: 100px;
-    max-width: fit-content;
     border: none;
 }
+
 .main-content{
-    min-height: 82vh;
+    min-height: 87.5vh;
     background-image: url("/images/college.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-.pink{
-    background-color: pink;
-}
-.student-container{
-    background-color: white;
-}
-.form-container{
-    margin: 0.5vw 8vw;
-    padding: 0.5vw 2vw 1vw;
-    background-color: #fff;
-    border-radius: 10px;
-}
-.form-container .head{
-    background-color: rgb(12, 141, 59);
-    border-radius: 10px;
-    color: white;
-}
-
-.table-container{
-    padding: 50px 1vw 10px;
-    background-color: white;
-}
-
-.table-container table{
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-.table-container table tr th{
-    text-align: center;
-    border: 1px solid black;
-    padding: 5px 10px;
-    border-collapse: collapse;
-}
-.table-container table tr td{
-    border: 1px solid black;
-    padding: 5px 10px;
-    border-collapse: collapse;
 }
