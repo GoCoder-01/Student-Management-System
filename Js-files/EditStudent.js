@@ -44,10 +44,16 @@ const editStudent = () => {
     dateOfBirth.setAttribute('placeholder', 'DD-MM-YYYY');
     dateOfBirth.classList.add('update-input');
 
+    const updateButton = document.createElement('button');
+    updateButton.innerText="UPDATE";
+    updateButton.classList.add('update-btn');
+    updateButton.classList.add('update-input');
+
     updateContainer.appendChild(name);
     updateContainer.appendChild(currentClass);
     updateContainer.appendChild(gender);
     updateContainer.appendChild(dateOfBirth);
+    updateContainer.appendChild(updateButton);
     div.appendChild(updateContainer);
     mainContent.appendChild(div);
 }

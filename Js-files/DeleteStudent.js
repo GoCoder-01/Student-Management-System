@@ -5,6 +5,7 @@ const deleteStudent = () => {
     mainContent.innerHTML="";
     mainContent.innerText="";
     const formContainer = document.createElement("div");
+    formContainer.classList.add('delete-container');
     const head = document.createElement('div');
     head.classList.add('head');
     head.classList.add('flex-center');
