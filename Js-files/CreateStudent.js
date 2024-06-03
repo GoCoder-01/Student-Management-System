@@ -1,6 +1,7 @@
 import "../css-files/CreateStudent.css";
 import "../utility.css";
 const createStudent = () => {
+    alert("")
     const mainContent = document.querySelector('.main-content');
     mainContent.innerHTML="";
     mainContent.innerText="";

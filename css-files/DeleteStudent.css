@@ -1,0 +1,47 @@
+.main-content .delete-container{
+    position: relative;
+    top: 80px;
+    background-color: transparent;
+
+}
+.main-content .delete-container .head{
+    background-color: green;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 0.05em;
+}
+
+.main-content .delete-container .delete-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 50%;
+    margin: 30px auto auto;
+    background-color: rgba(255, 255, 255, 0.267);
+    border-radius: 10px;
+}
+
+.delete-input{
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 1.05em;
+    letter-spacing: 0.05em;
+    border-radius: 20px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.473);
+}
+
+.btn{
+    background-color: rgb(95, 0, 0);
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}

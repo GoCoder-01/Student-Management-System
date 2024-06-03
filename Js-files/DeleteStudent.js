@@ -4,18 +4,36 @@ const deleteStudent = () => {
     const mainContent = document.querySelector(".main-content");
     mainContent.innerHTML="";
     mainContent.innerText="";
-    const formContainer = document.createElement("div");
-    formContainer.classList.add('delete-container');
+
+    const deleteContainer = document.createElement("div");
+    deleteContainer.classList.add('delete-container');
+
     const head = document.createElement('div');
     head.classList.add('head');
     head.classList.add('flex-center');
     const h1 = document.createElement('h1');
     h1.innerText = "Delete Student";
-    head.appendChild(h1);
-    formContainer.appendChild(head);
-    mainContent.appendChild(formContainer);
-
     
+    head.appendChild(h1);
+    deleteContainer.appendChild(head);
+    
+    const deleteForm = document.createElement('div');
+    deleteForm.classList.add('delete-form');
+    const nameInput = document.createElement('input');
+    nameInput.classList.add('delete-input');
+    nameInput.type = 'text';
+    nameInput.placeholder = 'Enter Student Name';
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.classList.add('btn');
+    deleteBtn.innerText="Delete";
+    deleteForm.appendChild(nameInput);
+
+    deleteForm.appendChild(nameInput);
+    deleteForm.appendChild(deleteBtn);
+    deleteContainer.appendChild(deleteForm);
+    mainContent.appendChild(deleteContainer);
+
 }
 
 export default deleteStudent;
