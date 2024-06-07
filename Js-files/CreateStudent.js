@@ -1,7 +1,7 @@
 import "../css-files/CreateStudent.css";
 import "../utility.css";
+import axios from "axios";
 const createStudent = () => {
-    alert("")
     const mainContent = document.querySelector('.main-content');
     mainContent.innerHTML="";
     mainContent.innerText="";
@@ -78,21 +78,54 @@ const createStudent = () => {
     submit.setAttribute('id', 'confirm-btn');
     submit.innerText = "Save & Continue";
 
-    submit.addEventListener('click', () =>{
+    submit.addEventListener('click', async () =>{
         const studentName=document.getElementById('name').value;
         const admClass = document.getElementById('currentClass').value;
         const studentGender =document.getElementById('gender').value;
         const dob = document.getElementById('dob').value;
 
-        const student = {
-            name : `${studentName}`,
-            admittedToClass : `${admClass}`,
-            gender : `${studentGender}`,
-            dateOfBirth : `${dob}`
-        }
-        alert(JSON.stringify(student));
-    })
+        // Sending post reqest to server using FetchAPI
+        /*
+        const data = {
+            name : studentName,
+            admittedToClass : admClass,
+            gender : studentGender,
+            dob : dob
+        };
 
+        console.log('Fetch started');
+        const url = 'http://localhost:8080/api/create';
+        const reque = {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        };
+
+        const response  = await fetch(url, reque);
+        const d = await response.json();
+        alert(d);
+        */
+
+        axios({
+            method: 'post',
+            url: 'http://localhost:8080/api/create',
+            data: {
+                name : studentName,
+                admittedToClass : admClass,
+                gender : studentGender,
+                dob : dob
+            }
+        }).then(response => {
+            console.log(response.status);
+            console.log(response.statusText);
+            console.log(response.headers);
+            console.log(response.data);
+            console.log(response.request);
+        })
+    });
     buttonCont.appendChild(cancel);
     buttonCont.appendChild(submit);
     
@@ -105,6 +138,10 @@ const createStudent = () => {
 
     formContainer.appendChild(studentForm);
     mainContent.appendChild(formContainer);
+}
+
+function sendReq(){
+    
 }
 
 export default createStudent;

@@ -1,24 +1,42 @@
 import "../css-files/ShowStudent.css"
-
-const showStudent = async() => {
+import axios from "axios";
+const showStudent = async () => {
     // await fetch("Student.json").then(response => response.json()).then(data => console.log(data)).catch((error) => console.log(error));
+
+    // await fetch('http://localhost:8080/api/students').then(response => response.json()).then(data => console.log(data)).catch(error => console.log(error));
+
+    // fetch('http://localhost:8080/api/students', {
+    //     mode: 'cors'
+    // })
+    // .then(Response => { 
+    //     console.log(Response);
+    //     Response.json();
+
+    // })
+    // .then(data => console.log(data));
+
+    let response="";
+    try {
+        response = await axios.get('http://localhost:8080/api/students');
+    } catch (error) {
+        console.log(error);
+    }
+
+    console.log(response.data);
 
     const mainContainer = document.querySelector('.main-content');
     mainContainer.innerHTML="";
     const tableContainer = document.createElement("div");
     tableContainer.classList.add('table-container');
 
-    const response = await fetch("Student.json");
-    const data = await response.json();
-    const students = Array.from(data);
+    
+    const students = response.data;
 
     const table = document.createElement('table');
-
 
     const row = document.createElement('tr');
     const nameHead = document.createElement("th");
     nameHead.innerText= "STUDENT NAME";
-
 
     const classHead = document.createElement("th");
     classHead.innerText= "CLASS";
@@ -43,7 +61,7 @@ const showStudent = async() => {
         const dobData = document.createElement('td');
         const genderData = document.createElement('td');
         nameData.innerText= `${student.name}`;
-        classData.innerText=  `${student.className}`;
+        classData.innerText=  `${student.admittedToClass}`;
         dobData.innerText=  `${student.dob}`;
         genderData.innerText=  `${student.gender}`;
 
